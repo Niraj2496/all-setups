@@ -7,7 +7,9 @@
 
     - name: untar the apache file
       command: tar -zxvf apache-tomcat-9.0.87.tar.gz
-
+        #unarchieve:
+        #src: "apache-tomcat-9.0.87.tar.gz"
+        #root: "/root/"
 
     - name: rename the tomcat
       command: mv apache-tomcat-9.0.87 tomcat
