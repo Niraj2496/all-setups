@@ -2,7 +2,7 @@ echo 'deb https://download.arangodb.com/arangodb312/DEBIAN/ /' | sudo tee /etc/a
 wget -q https://download.arangodb.com/arangodb312/DEBIAN/Release.key -O- | sudo apt-key add -
 sudo apt update -y
 sudo apt -y install apt-transport-https
-sudo apt -y install arangodb3.12.2-1
-sudo systemctl start arangodb3.12.2-1
-sudo systemctl status arangodb3.12.2-1
+sudo apt -y install arangodb3
+sudo systemctl start arangodb3
+sudo systemctl status arangodb3
 sudo arangosh
